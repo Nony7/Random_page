@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+ 
+
+
+    <style>
+        *{
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            width: 100%;
+            height: 100%;
+
+           
+       
+        }
+
+        .main{
+            width: 100vw;
+            min-height: 100vh;
+
+        }
+
+        #section1{
+            width: 100vw;
+            min-height: 100vh;
+            position: relative;
+            background-color: black;
+
+        }
+
+        #navbar{
+
+            width: 100vw;
+            min-height: 10vh;
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid whitesmoke;
+            background-color:black;
+            
+        }
+
+        #navbar1>a{
+            text-decoration: none;
+            font-size: 1.3vw;
+            padding: 0 0.7vw;
+            font-family: 'poppins';
+            color: whitesmoke;
+            border-right: 1px solid whitesmoke;
+            
+        }
+        
+
+        #navbar2{
+            border-left: 1px solid whitesmoke;
+            border-right: 1px solid whitesmoke;
+          
+        }
+        #navbar2>h3{
+
+            font-size: 2vw;
+            padding: 0 1vw;
+   
+         font-family: 'Boho Rainbow';
+            font-weight: 500;
+            color: whitesmoke;
+        }
+
+        #navbar3{
+      
+            
+        }
+        #navbar3>a{
+            text-decoration: none;
+            font-size: 1.3vw;
+            padding: 0 0.7vw;
+            font-family: 'poppins';
+             color: whitesmoke;
+             border-left: 1px solid whitesmoke;
+        }
+        #undernav{
+            width: 100%;
+            min-height: 5vh;
+            
+            background-color: black;
+
+        }
+
+       
+
+        #top{
+
+            width: 100vw;
+            min-height: 50vh;
+            
+            display: flex;
+            overflow: hidden;
+         
+
+        }
+        #bottom{
+            width: 100vw;
+            min-height: 35vh;
+      
+            display: flex;
+
+        }
+
+
+
+
+        #toprightright{
+
+        width: 10%;
+        min-height: inherit;
+       
+              
+       
+    
+     
+        }
+
+
+         #rightright1{
+            margin: 2vw;
+            transform: rotate(90deg);
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+          
+        } 
+
+        #rightright1>a{
+           
+            margin: 1vw;
+            font-size: 1.1vw;
+            font-family: 'gilroy';
+            text-transform: uppercase;
+            text-decoration: none;
+            color: whitesmoke;
+        } 
+
+
+
+        #topleft{
+
+                
+        width: 30vw;
+        min-height: inherit;
+  
+
+        
+        }
+
+
+
+
+         #photu{
+                width:18vw;
+                
+                min-height:45vh;
+                margin: 1.2vw 5vw;
+        
+                border: 2px solid white;;
+                    background-image: 'one111.jpg';
+                background-size: cover;
+                opacity: 0.5;
+              
+        } 
+       
+
+        #topmiddle{
+            
+            width: 60vw;
+            min-height: inherit;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+           
+          
+    
+
+        }  
+       #topmiddle>h1{
+            font-size: 2.2vw;
+            font-family: 'Cinzel', serif;
+            font-weight: 300;
+            padding: 1.3vw;
+         
+            color:whitesmoke;
+
+        } 
+        #topmiddle>p{
+            font-size: 1.8vw;
+            font-family: 'Allison', cursive;
+            font-weight: 300;
+            padding: 0 1.2vw;
+            color: whitesmoke;
+
+    
+        } 
+     
+
+        #bottom1{
+            width: 30vw;
+            min-height: inherit;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid whitesmoke;
+        
+        }
+        #bottom1>h4{
+          padding:2vw 10vw; 
+          font-family: 'Boho Rainbow';
+          font-weight: 500;
+
+          color: whitesmoke;
+
+        }
+        #bottom1>a{
+          padding:0.4vw 10vw;
+          font-family: 'gilroy';
+          text-decoration: none;
+          color: whitesmoke;
+        }
+
+        #bottom2{
+            width: 40vw;
+            min-height: inherit;
+        
+                display: flex;
+                border-right: 1px solid whitesmoke;
+               
+                flex-direction: column;
+        }
+        #bottom2>h3{
+            padding:1vw 13vw; 
+          font-family: 'gilroy';
+          font-weight: 500;
+          color: whitesmoke;
+        }
+
+         #bottom2>p{
+            font-size: 2vw;
+             font-family: 'Allison', cursive;
+            font-weight: 300;
+            padding: 1vh 4vw;
+            color: whitesmoke;
+           
+
+         }
+
+
+        #bottom3{
+            width: 30vw;
+            min-height: inherit;
+            display: flex;
+            flex-direction: column;
+  
+
+        }
+        #bottom3>h4{
+         padding:2vw 10vw; 
+          font-family: 'gilroy';
+          font-weight: 500;
+          color: whitesmoke;
+
+        }
+        #bottom3>a{
+          padding:0.4vw 10vw;
+          font-family: 'gilroy';
+                text-decoration: none;
+                color: whitesmoke;
+        }
+
+      
+
+
+
+
+
+
+    
+     
+
+
+
+
+       
+
+
+
+        @media screen and (max-width: 550px) {
+
+
+        #section1 {
+
+        background-color: lightcyan;
+
+        }
+
+
+            #top{
+
+             
+                min-height: 45vh;
+             
+    
+        }
+
+        #topleft{
+           
+        }
+        
+#photu{
+    width:80%;
+    min-height:30vh ;
+    margin: 5vw 3vw;
+   
+
+}
+
+
+
+
+
+#topmiddle>h1{
+font-size: 3.5vw;
+
+padding:3.3vw;
+
+} 
+
+#topmiddle>p{
+font-size: 2.5vw;
+
+
+} 
+
+
+#bottom{
+width: 100%;
+min-height: 40vh;
+
+}
+
+#bottom1{
+  
+}
+
+
+#bottom1>h4{
+padding:9vw 6vw; 
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: 100;
+font-size: 2.5vw;
+
+}
+
+#bottom1>a{
+padding:1vw 6vw;
+font-size: 2.5vw;
+}
+
+
+
+  
+
+
+#bottom2>h3{
+padding:6vw 10vw; 
+font-size: 2.5vw;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#bottom2>p{
+font-size: 3vw;
+
+padding: 2vh 5vw;
+
+
+}
+
+
+#bottom3>h4{
+padding:7vw 10vw; 
+font-family:Georgia, 'Times New Roman', Times, serif;
+
+
+}
+#bottom3>a{
+padding:1.5vw 10vw;
+font-size: 2.5vw;
+
+}
+
+#undernav{
+    background-color: whitesmoke;
+ 
+}
+
+.container{
+             width: 400px;
+             height: 400px;
+        
+
+
+        }
+
+        .items{
+          
+            height: 400px;
+        }
+
+        #wrapper{
+            width: 100%;
+            min-height: 60vh;
+          
+          background-image: url("QoAN.gif");
+           background-repeat: repeat;
+          
+        }
+
+
+
+
+
+
+};
+ 
+
+
+
+      
+
+
+
+
+        
+
+         
+
+       
+  
+
+        
+            
+      
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main"   data-scroll-container          >
+
+
+      
+
+
+
+
+
+
+            <div id="section1"   data-scroll  >
+
+                    <div id="navbar">
+                            <div id="navbar1"  >
+
+                                    <a href="">HOME</a>
+                                    <a href="">GALLERY</a>
+                                    <a href="">HISTORY</a>
+                                    
+                            </div>
+
+                            <div id="navbar2">
+
+                                    <h3 id="header333" >THIRD asasa WEST STUDIO</h3>
+
+                            </div>
+
+                            <div id="navbar3">
+
+                                <a href="">ABOUt</a>
+                                <a href="">CONTACT</a>
+
+                            </div>
+                    </div> <!--navbar ends here-->
+
+            
+                  <!--   <div id="remaining"> -->
+                   
+                    <div id="top">
+                            <div id="topleft">
+                     <div id="photu"></div>  
+                              
+                               
+                            </div>
+                            <div id="topmiddle" >
+                                <h1>BRAND<br>  DESIGNER &<br> PHOTOGRAPHY</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia fuga ducimus rerum, asperiores quo optio culpa. Iste numquam ad at alias rem ratione veniam, illum doloribus consequuntur omnis eius molestias nemo quaerat necessitatibus, aut ducimus sit deserunt hic harum nulla recusandae vero sed? Ea porro odit voluptate magnam fugit, non ipsam dolorum voluptatem cum minus omnis rem voluptatum vel delectus asperiores impedit sit! Aperiam quia optio porro esse amet nostrum, illum magni eligendi itaque aut nisi voluptate aliquid facere?</p>
+                            </div>
+                          <div id="toprightright">
+                            <div id="rightright1"> 
+                                <a href="">facebook</a>
+                                <a href="">twitter</a>
+                                <a href="">instagram</a>
+                            </div> 
+
+                            </div>
+                    </div> <!-- top ends here-->
+
+
+
+                    <div id="bottom" >
+                        
+                        <div id="bottom1">
+                            <h4>NAVIGATE</h4>
+                            <a href="">WEDDING</a>
+                            <a href="">BRANDING</a>
+                            <a href="">JOURNAL</a>
+                            <a href="">ABOUT</a>
+                        </div>
+                        <div id="bottom2">
+                            <h3>LOS ANGELES FC</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, labore repellat dicta deleniti expedita voluptates, a doloremque cum, nobis velit blanditiis vel magni voluptatum dolor quisquam. Est optio explicabo tempora.</P>
+                        </div>
+                        <div id="bottom3" >
+                            <h4>NAVIGATE</h4>
+                            <a href="">WEDDING</a>
+                            <a href="">BRANDING</a>
+                            <a href="">JOURNAL</a>
+                            <a href="">ABOUT</a>
+                        </div>
+                   
+                    </div> <!-- bottom ends here-->
+
+
+
+                 
+
+
+                    </div><!--section1 ends here!-->
+
+
+
+    
+
+
+
+
+
+
+
+
+                         
+</div> <!-- main ends here-->
+ 
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/blotter.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
